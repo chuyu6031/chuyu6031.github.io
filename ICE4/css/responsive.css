@@ -1,0 +1,24 @@
+@media screen and (min-width: 650px){
+	.logo{
+		text-align: center;
+	}
+
+	.top-nav ul{
+		text-align: center;
+	}
+
+	.top-nav ul li{
+		display: inline-block;
+	}
+}
+
+
+@media screen and (min-width: 1000px){
+
+
+
+}
+
+
+
+
