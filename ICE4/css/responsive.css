@@ -9,13 +9,27 @@
 
 	.top-nav ul li{
 		display: inline-block;
+		border-top: 1px solid red;
 	}
 }
 
 
 @media screen and (min-width: 1000px){
 
+	.logo{
+		float: left;
+	}
 
+	.top-nav ul{
+		text-align: right;
+	}
+
+	.top-nav ul li{
+		display: inline-block;
+		border-top: none;
+		line-height: 280%;
+		/*is there any options?*/
+	}
 
 }
 
