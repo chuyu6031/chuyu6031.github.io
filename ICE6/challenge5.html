@@ -41,13 +41,13 @@
 			console.log(x.alt);
 			var img = document.getElementById('image');
 			img.innerHTML = x.alt;
-			img.style.background = "url('" + x.src + "')";
+			img.style.backgroundImage = "url('" + x.src + "')"	
 		}
 
 		function hide(){
 			var img = document.getElementById('image');
 			img.innerHTML = 'Hover over an image below.';
-			img.style.background = '#8e68ff';
+			img.style.backgroundImage = "url('')";
 		}
 
 	</script>
