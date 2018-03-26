@@ -37,8 +37,19 @@
 	</style>
 
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
+		function show(x){
+			console.log(x.alt);
+			var img = document.getElementById('image');
+			img.innerHTML = x.alt;
+			img.style.background = "url('" + x.src + "')";
+		}
+
+		function hide(){
+			var img = document.getElementById('image');
+			img.innerHTML = 'Hover over an image below.';
+			img.style.background = '#8e68ff';
+		}
+
 	</script>
 </head>
 
@@ -49,21 +60,35 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
+		<img class = "preview"  tabindex = "1"
+			id = "img" 
 			alt = "Styling with a Bandana" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-			>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg"
+			onmouseover = "show(this)" 
+			onmouseout = "hide()"
+			onfocus="show(this)"
+			onblur="hide()">
 
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
+		<img class = "preview" tabindex = "2" 
+			id = "img"
 			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover= "show(this)" 
+			onmouseout = "hide()"
+			onfocus="show(this)"
+			onblur="hide()">
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
+		<img class = "preview" tabindex = "3" 
+			id = "img"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+			alt = "Young Puppy"
+			onmouseover= "show(this)" 
+			onmouseout = "hide()"
+			onfocus="show(this)"
+			onblur="hide()">
 </body>
 </html>
 	
