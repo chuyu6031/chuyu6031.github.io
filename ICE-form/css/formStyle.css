@@ -25,7 +25,7 @@ h2{
 }
 
 /* Style the list items*/
-form ol li {
+/*form ol li {
 	background: #b9cf6a;
 	background: rgba(255,255,255,.3);
 	border-color: #e3ebc3;
@@ -38,34 +38,73 @@ form ol li {
 	list-style: none;
 	padding: 1% 2%;
 	margin-bottom: .5%;
-}
+}*/
 
-form ol ol li {
+/*form ol ol li {
 	background: none;
 	border: none;
 	float: left;
 }
+*/
 
+
+
+
+form{
+	counter-reset: label;
+}
+
+form h4:before {
+	content: "Step "  counter(label) ": ";
+	counter-increment: label;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 17px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 30px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: brown;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: #4CAF50;
+    cursor: pointer;
+}
 
 
 /*Add a counter to the elements */
-form{
-	counter-reset: fieldsets;
-}
 
-form > fieldset > legend:before {
+/*form > fieldset > legend:before {
 	content: "Step " counter(fieldsets) ": ";
 	counter-increment: fieldsets;
-}
+}*/
 
 /*payment formatting */
-form fieldset fieldset label {
+/*form fieldset fieldset label {
 	background:none no-repeat left 50%;
 	line-height: 20px;
 	padding: 0 0 0 30px;
 	width: auto;
-}
-form label[for=visa] {
+}*/
+/*form label[for=visa] {
 	background-image: url("img/visa.gif");
 }
 form label[for=amex] {
@@ -73,4 +112,4 @@ form label[for=amex] {
 }
 form label[for=mastercard] {
 	background-image: url("img/mastercard.gif");
-}
+}*/

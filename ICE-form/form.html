@@ -13,9 +13,8 @@
 		<h2 id="title"> Your Dream Job Starts Here... </h2>
 		<form name="application" action="" method="post">
 
-
+		<div>
      	<h4><u>Basic Information</u></h4>
-   		<div>
 		</a>
       	<!-- Content -->
         <fieldset>
@@ -43,11 +42,11 @@
 			<label> State: <select class="form-control bfh-states" data-country="country" data-state="MI" required></select></label>
 			<label> Zip code: <input type="text" name="Zip code" class="form-control" placeholder = "48108"></label><br>  
 		</fieldset><br>
-      </div>
+      	</div>
     
 
-	<div>
-      <h4><u>Education and Work Experience</u></h4>
+		<div>
+      	<h4><u>Education and Work Experience</u></h4>
         <fieldset> 
 		  <legend>Educational Information:</legend>
 		  
@@ -151,8 +150,9 @@
 
 			<label>Expected Start Date: <input type="date" name="startdate" class="form-control"></label><br>
 			
-			<label>Expected Salary: $<input type="range" name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"><br/><span id="salary"></span>
-			</label><br>
+			<label>Expected Salary: $ <span id="salary"></span></label><br>
+			<input type="range" name="salary" min="40" max="200" step="5" value="100" class="slider" id="slider">
+			<br>
 
 			<label>Personal Website/Portfolio: <input type="url" name="website" placeholder="www.mywebsite.com" class="form-control"></label><br>
 			
@@ -170,6 +170,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
+    <script>
+    	var input = document.getElementById('slider');
+    	var output = document.getElementById('salary');
+
+    	output.innerHTML = input.value;
+
+    	input.onchange = function() {
+    		output.innerHTML = this.value;
+		}
+    </script>
 	
 	</body>
 </html>
