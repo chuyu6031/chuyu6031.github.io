@@ -36,9 +36,29 @@
 	}
 	</style>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
+	$(document).ready(function(){
+		$('.preview').focus(function(){
+			$('#image').text($(this).attr('alt'));
+			$('#image').css('background-image',"url('" + $(this).attr('src') + "')")
+		});
+
+		$('.preview').blur(function(){
+			$('#image').text('Hover over an image below.');
+			$('#image').css('background-image',"url('')")
+		});
+
+		$('.preview').hover(function(){
+			$('#image').text($(this).attr('alt'));
+			$('#image').css('background-image',"url('" + $(this).attr('src') + "')")
+		},
+		function(){
+			$('#image').text('Hover over an image below.');
+			$('#image').css('background-image',"url('')")
+		})
+	});
 	</script>
 </head>
 
@@ -50,6 +70,7 @@
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview" 
+			tabindex = "1"
 			alt = "Styling with a Bandana" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
 			>
@@ -57,11 +78,13 @@
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
 		<img class = "preview" 
+			tabindex = "2"
 			alt = "With My Boy" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 	
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
+		<img class = "preview"
+			tabindex = "3" 
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
 			alt = "Young Puppy";>
 </body>
