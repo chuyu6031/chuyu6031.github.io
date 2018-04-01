@@ -172,6 +172,11 @@ section h2{
 
 /*-----Skill-----*/
 
+.main-content h1{
+	text-align: center;
+	padding: 30px 0; 
+}
+
 .skills-set{
 	padding: 15px 15px 30px 15px;
 }
@@ -181,7 +186,7 @@ section h2{
 	margin: 25px auto;
 }
 
-.skills-set h1{
+.skills-set h2{
 	text-align: center;
 }
 
