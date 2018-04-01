@@ -170,6 +170,26 @@ section h2{
 }
 
 
+/*-----Skill-----*/
+
+.skills-set{
+	padding: 15px 15px 30px 15px;
+}
+
+.skills-img{
+	display: block;
+	margin: 25px auto;
+}
+
+.skills-set h1{
+	text-align: center;
+}
+
+.skills-set div{
+	text-align: center;
+}
+
+
 /*-----FOOTER-----*/
 .fix-footer{
 	position: fixed;
