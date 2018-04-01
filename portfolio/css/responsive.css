@@ -86,6 +86,13 @@
     display: inline-block;
 }
 
+
+/*-----About-----*/
+
+.my-pic{
+	float: left;
+}
+
 /*-----IMAGE-----*/
 	.photo-grid{
 		display: grid;
