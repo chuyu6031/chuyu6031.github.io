@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px){
+@media screen and (min-width: 650px) and (max-width: 999px){
 	
 /*-----MAIN-----*/
 .main-content{
@@ -12,20 +12,60 @@ footer{
 }
 
 /*-----NAVIGATION BAR-----*/
-/*	.logo{
-		text-align: center;
-	}
+#nav-toggle{
+	display: none;
+}
 
-	.top-nav ul{
-		text-align: center;
+.logo{
+	text-align: center;
+}
 
-	}
+.lg-nav{
+	display: inline;
+}
 
-	.top-nav ul li{
-		display: inline-block;
-		border: none;
-		border-top: 1px solid red;
-	}*/
+.lg-nav ul{
+	text-align: center;
+}
+
+.lg-nav ul li{
+	display: inline-block;
+	line-height: 200%;
+}
+
+.lg-nav ul li a{
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+.lg-nav ul li a.current-page{
+	color: #FF6D24;
+	font-weight: bold;
+}
+
+.lg-nav ul li a:hover, .lg-nav ul li a:focus{
+    background-color: #FFD6A0;
+    color: #4E413B;
+    line-height: 200%;
+    display: inline-block;
+}
+
+/*-----Skills-----*/
+.skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.skills-set{
+	margin: 0 3%; 
+}
+
+.md-center{
+	grid-column: 1 / 3;
+	margin: 0 22.5%;
+}
 
 /*-----Works-----*/
 .img-grid{
@@ -101,8 +141,6 @@ footer{
 
 
 /*-----About-----*/
-
-
 .my-pic{
 	margin: 50px;
 	width: 300px;
