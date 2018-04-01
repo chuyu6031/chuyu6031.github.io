@@ -1,7 +1,7 @@
 @media screen and (min-width: 650px){
 	
 /*-----NAVIGATION BAR-----*/
-	.logo{
+/*	.logo{
 		text-align: center;
 	}
 
@@ -14,7 +14,7 @@
 		display: inline-block;
 		border: none;
 		border-top: 1px solid red;
-	}
+	}*/
 
 /*-----IMAGE-----*/
 	.photo-grid{
@@ -46,7 +46,21 @@
 
 /*-----NAVIGATION BAR-----*/
 
-	
+#nav-toggle{
+	display: none;
+}
+
+.lg-show{
+	display: inline;
+}
+
+.lg-show ul{
+	text-align: right;
+}
+
+.lg-show ul li{
+	display: inline-block;
+}
 
 /*-----IMAGE-----*/
 	.photo-grid{
