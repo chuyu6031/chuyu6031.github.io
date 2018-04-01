@@ -89,8 +89,23 @@
 
 /*-----About-----*/
 
-.my-pic{
+
+img{
 	float: left;
+}
+
+.my-pic{
+	margin: 50px;
+	width: 300px;
+}
+
+.my-intro{
+	float: left;
+	width: calc(100% - 450px);
+}
+
+footer{
+	clear:both;
 }
 
 /*-----IMAGE-----*/

@@ -149,12 +149,23 @@ header{
 }
 
 .my-pic{
-	text-align: center;
-	padding: 15px; 
+	display: block;
+	margin: 15px auto;
 }
 
 section{
 	padding: 15px;
+}
+
+section h1{
+	font-size: 1.3em;
+	text-align: center;
+}
+
+section h2{
+	font-size: 1.2em;
+	text-align: center;
+	color: #FF6D24;
 }
 
 
