@@ -102,6 +102,7 @@ img{
 .my-intro{
 	float: left;
 	width: calc(100% - 450px);
+	padding-top: 30px;
 }
 
 footer{

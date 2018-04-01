@@ -43,6 +43,7 @@ a.skip:active, a.skip:focus, a.skip:hover {
   	height: 75%;
   	background-position: center;
   	background-size: cover;
+  	background-repeat: no-repeat;
   	position: relative;
 }
 
@@ -145,7 +146,7 @@ header{
 
 /*-----About Me-----*/
 .main-content{
-	min-height: calc(100vh - 120px);
+	min-height: calc(100vh - 121px);
 }
 
 .my-pic{
