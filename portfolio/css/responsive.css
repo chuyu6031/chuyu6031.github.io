@@ -52,6 +52,11 @@ footer{
     display: inline-block;
 }
 
+/*-----About-----*/
+.my-pic{
+	width: 300px;
+}
+
 /*-----Skills-----*/
 .skills{
 	display: grid;
@@ -130,7 +135,7 @@ footer{
 
 /*-----MAIN-----*/
 .main-content{
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -151,6 +156,10 @@ footer{
 	float: left;
 	width: calc(100% - 450px);
 	padding-top: 30px;
+}
+
+section h1{
+	text-align: left;
 }
 
 
