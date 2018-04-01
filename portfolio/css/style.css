@@ -202,9 +202,8 @@ section h2{
 .img-cell img{
 	width: 90%;
 	display: block;
-	margin: 0 auto;
-	padding: 3% 0;
-
+	margin: 3% auto;
+	box-shadow: 1.5px 1.5px 1.5px grey;
 }
 
 
