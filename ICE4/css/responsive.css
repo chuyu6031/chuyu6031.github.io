@@ -58,7 +58,7 @@
 	.top-nav ul li{
 		display: inline-block;
 		border-top: none;
-		line-height: 280%;
+		/*line-height: 280%;*/
 		/*is there any options?*/
 	}
 

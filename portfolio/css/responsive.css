@@ -50,16 +50,40 @@
 	display: none;
 }
 
-.lg-show{
+.logo{
+	float: left;
+}
+
+.lg-nav{
 	display: inline;
 }
 
-.lg-show ul{
+.lg-nav ul{
 	text-align: right;
 }
 
-.lg-show ul li{
+.lg-nav ul li{
 	display: inline-block;
+	line-height: 340%;
+}
+
+.lg-nav ul li a{
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+.lg-nav ul li a.current-page{
+	color: #FF6D24;
+	font-weight: bold;
+}
+
+.lg-nav ul li a:hover, .lg-nav ul li a:focus{
+    background-color: #FFD6A0;
+    color: #4E413B;
+    line-height: 340%;
+    display: inline-block;
 }
 
 /*-----IMAGE-----*/
