@@ -46,21 +46,7 @@
 
 /*-----NAVIGATION BAR-----*/
 
-	.logo{
-		float: left;
-	}
-
-	.top-nav ul{
-		text-align: right;
-		border-top: none;
-	}
-
-	.top-nav ul li{
-		display: inline-block;
-		border-top: none;
-		line-height: 280%;
-		/*is there any options?*/
-	}
+	
 
 /*-----IMAGE-----*/
 	.photo-grid{

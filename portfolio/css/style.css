@@ -1,11 +1,9 @@
 /*-----MAIN-----*/
-html {
-  box-sizing: border-box;
-}
-
-*{
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'PT Sans', 'Open Sans', sans-serif;
 }
 
 body, html {
@@ -22,8 +20,9 @@ body, html {
 	height: 1px;
 	overflow: hidden;
 	z-index: -999;
-	color: #E3AD02;
+	color: #fff;
 }
+
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
     top: auto;
@@ -35,112 +34,103 @@ a.skip:active, a.skip:focus, a.skip:hover {
 }
 
 
-header, footer, .logo {
-	color: #DDDDDA; 
-}
-
 /*Hero Image*/
 .hero-image {
-  background-image: url("../img/homepage.jpg");
-  height: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+	background-image: url("../img/homepage.jpg");
+  	height: 75%;
+  	background-position: center;
+  	background-size: cover;
+  	position: relative;
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  	text-align: center;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	
+  	text-shadow: 1px 1px grey;
 }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
+.hero-text h1{
+	color: #fff;
+	font-size: 3em;
 }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
+.hero-text p{
+	color: #E7F5F2;
+	font-size: 1.5em;
 }
+
+
 
 
 /*-----HEADER & NAVIGATION-----*/
 header{
-	font-family: 'PT Sans', sans-serif;
 	font-size: 105%;
     width: 100%;
 }
+
+
 /*mobile-first*/
-.top-nav ul{
+.nav-menu ul{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	display: block;
 }
-.top-nav ul li, .menu-icon{
-	border-top: 1px solid #DDDDDA; /*CHANGE*/
+
+.nav-menu ul li{
+	border-top: 1px solid #E7F5F2;
 }
-.top-nav ul li a{
+
+
+.nav-menu ul li a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: #000; /*CHANGE*/
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
 	text-align: center;
 }
-.menu-icon a{
-	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
-	text-decoration: none;
-	padding: .5em 1em;
-	display: block;
-	text-align: center;
-}
-.top-nav ul li a.current-page{
+
+.nav-menu ul li a.current-page{
 	color: #F54320;
 	font-weight: bold;
 }
-.top-nav ul li a.current-page:before {
-  color: #F54320;
-  padding-right: 4px;
-  position: relative;
-  top: 1px;
-}
-.top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
+
+.nav-menu ul li a:hover, .nav-menu ul li a:focus{
     background-color: #000;
     color: #DDDDDA;
     font-weight: bold;
 }
-.top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
-  	color: #DDDDDA;
-  	padding-right: 4px;
-  	position: relative;
-  	top: 1px;
-}
-/*implement menu toogle*/
-.top-nav.toggle-open ul{
-	display: block;
+
+.hide{
+	display: none;
 }
 
-/*-----LOGO-----*/
+
+
+/*-----Nav-----*/
+
 .logo{
-	margin: 0;
-	text-align: center;
-	padding: .25em .75em;
+	padding: 3px 20px 0px 20px;
 }
+
 .logo img{
 	height: 3em;
+	}
+
+.logo a:nth-child(2) {
+	text-decoration:none;
+	font-size: 2em;
+	float: right;
+	color: #000;
+}
+
+.logo a:nth-child(2):hover{
+	color: blue;
 }
 
 /*-----FOOTER-----*/
@@ -158,17 +148,6 @@ footer p{
 	height: 25px;
 }
 
-/*-----HOMEPAGE-----*/
-.home-flag{
-	background-color: #000;
-	color: #DDDDDA;
-	display: flex;
-	flex-direction: column;
-	max-width: 300px;
-	margin: auto;
-	padding: 1.5em;
-	/*box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;*/
-}
 
 /*-----IMAGES PAGE ------*/
 .main-content-crafts{
