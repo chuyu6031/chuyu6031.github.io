@@ -16,32 +16,9 @@ body, html {
 }
 
 
-/*-----skip content-----*/
-.skip{
-	position: fixed;
-	left: -999px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	z-index: -999;
-	color: #fff;
-}
-
-a.skip:active, a.skip:focus, a.skip:hover {
-    position:fixed;
-    top: auto;
-    left: auto; 
-	width: auto; 
-	height: auto; 
-	overflow: visible;
-	z-index: 999;
-}
-
-
 /*-----Homepage: Hero Image-----*/
 .hero-image {
-	background-image: url("../img/homepage.jpg");
+	background-image: url("../img/home.jpg");
   	height: 75%;
   	background-position: center;
   	background-size: cover;
@@ -52,22 +29,23 @@ a.skip:active, a.skip:focus, a.skip:hover {
 .hero-text{
   	text-align: center;
   	position: absolute;
-  	top: 50%;
+  	top: 45%;
   	right: 0;
   	left: 0;
-  	text-shadow: 1px 1px grey;
   	padding: 20px;
 }
 
 .hero-text h1{
-	color: #fff;
+	color: #00204A;
 	font-size: 5vh;
+	font-family: 'Paytone One', sans-serif;
 }
 
 .hero-text p{
-	color: #E7F5F2;
-	font-size: 2.5vh;
+	color: #003780;
+	font-size: 3vh;
 	padding-top: 15px; 
+	font-family: 'Paytone One', sans-serif;
 }
 
 
