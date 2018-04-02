@@ -82,22 +82,43 @@ header{
 	text-align: center;
 }
 
-.nav-menu ul li a.current-page{
-	color: #FF6D24;
-	font-weight: bold;
+.nav-menu ul li a.current-page,
+.lg-nav ul li a.current-page{
+	color: #66ccff;
 }
 
-.nav-menu ul li a:hover, .nav-menu ul li a:focus{
-    background-color: #FFD6A0;
-    color: #4E413B;
+.nav-menu ul li a:hover, .nav-menu ul li a:focus,
+.lg-nav ul li a:hover, .lg-nav ul li a:focus{
+    background-color: #cceeff;
+    color: #000;
 }
 
-.hide{
-	display: none;
-}
-
+.hide,
 .lg-nav{
 	display: none;
+}
+
+
+.lg-nav ul{
+	text-align: right;
+}
+
+.lg-nav ul li{
+	display: inline-block;
+	line-height: 340%;
+}
+
+.lg-nav ul li a{
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+}
+
+
+.lg-nav ul li a:hover, .lg-nav ul li a:focus{
+    line-height: 340%;
+    display: inline-block;
 }
 
 
@@ -125,7 +146,6 @@ header{
 
 
 /*-----About Me-----*/
-
 .my-pic{
 	display: block;
 	margin: 15px auto 0 auto;
@@ -137,26 +157,31 @@ section{
 }
 
 section > h1{
-	font-size: 1.3em;
+	font-size: 1.5em;
 	text-align: center;
+	font-family: 'Paytone One', sans-serif;
 }
 
 section > h2{
 	font-size: 1.2em;
 	text-align: center;
-	color: #FF6D24;
+	color: #002c66;
 	line-height: 135%;
+	padding-bottom: 1%; 
+	font-family: 'Paytone One', sans-serif;
+
 }
 
 section > p{
-	line-height: 135%;
+	line-height: 140%;
 }
 
 
 /*-----Skill-----*/
 .main-content > h1{
 	text-align: center;
-	padding-top: 30px; 
+	padding: 30px 0 20px 0;
+	font-family: 'Paytone One', sans-serif; 
 }
 
 .skills-set{
@@ -170,7 +195,7 @@ section > p{
 
 .skills-set > h2{
 	text-align: center;
-	line-height: 180%;
+	line-height: 230%;
 }
 
 .skills-set > div{
