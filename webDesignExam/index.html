@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Final Exam</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="background-image: url('images/christmas-colour.png')">
+	<h1>Chu-Yu Cheng</h1>
 
+	<img id="first-pic" src="images/examPic.JPG" alt="examPic"><img id="align-center" src="images/UMSI-logo.jpg" alt="UMSI-logo">
+
+	<div>
+		<button onclick="hidepic()">Hide Image</button>
+		<button onclick="showpic()">Show Image</button>
+	</div>
+
+	<script type="text/javascript">
+		var img1 = document.getElementById('first-pic');
+		var img2 = document.getElementById('align-center');
+
+		function hidepic(){
+	        img1.style.display = 'none';
+	        img2.style.display = 'block';
+	        img2.style.margin = "0 auto"; 
+		}
+
+		function showpic(){
+			img1.style.display = 'inline-block';
+			img2.style.display = 'inline-block';
+		}
+	</script>
 </body>
 </html>
